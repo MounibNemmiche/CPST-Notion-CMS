@@ -7,6 +7,7 @@ It uses Notion as a CMS, fetching content from Notion and then uses [Next.js](ht
 The site is deployed to [Netlify](http://netlify.com).
 
 TO CHECK The Website click [HERE](https://cpst.neltify.app)
+<br/>
 Writing posts is as simple as creating a page in my beloved [Notion](https://notion.so/) 🔥
 
 --------------------------------------------------------------------------------------
