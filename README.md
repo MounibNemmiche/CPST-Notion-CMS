@@ -68,6 +68,6 @@ It should be pretty easy to customize most styling-related things, especially wi
 
 ## License
 
-MIT © [Travis Fischer](https://transitivebullsh.it)
+Original Repositorie -> [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
 
 Support my open source work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
