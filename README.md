@@ -9,7 +9,7 @@ The site is deployed to [Netlify](http://netlify.com).
 TO CHECK The Website click [HERE](https://cpst.neltify.app)
 
 
-> [!info] this Github repo is customize by [Me](https://www.github.com/MounibNemmiche)
+> [info] this Github repo is customize by [Me](https://www.github.com/MounibNemmiche)
 ## License
 
 The Original Repositorie Owner -> [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
