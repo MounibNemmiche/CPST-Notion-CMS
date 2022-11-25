@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://cpst.netlify.app/sitemap.xml
