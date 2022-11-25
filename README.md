@@ -12,7 +12,7 @@ Writing posts is as simple as creating a page in my beloved [Notion](https://not
 
 --------------------------------------------------------------------------------------
 
-#>This GitHub repo is customised by [Me](https://www.github.com/MounibNemmiche)
+# >This GitHub repo is customised by [Me](https://www.github.com/MounibNemmiche)
 ## License
 
 The Original Repositorie Owner -> MIT © [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
