@@ -7,6 +7,7 @@ It uses Notion as a CMS, fetching content from Notion using there [API](https://
 The site is deployed to [Netlify](http://netlify.com).
 
 This repo is what I use to power CPST Website, click [HERE](https://cpst.netlify.app) to check it out.
+
 <br/>
 Writing posts is as simple as creating a page in my beloved [Notion](https://notion.so/) ❤
 
