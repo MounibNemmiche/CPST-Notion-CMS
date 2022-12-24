@@ -2,13 +2,15 @@
 
 ## About 
 
-It uses Notion as a CMS, fetching content from Notion and then uses [Next.js](https://nextjs.org/).
+It uses Notion as a CMS, fetching content from Notion using there [API](https://developers.notion.com/) and then uses [Next.js](https://nextjs.org/).
 
 The site is deployed to [Netlify](http://netlify.com).
 
-TO CHECK The Website click [HERE](https://cpst.netlify.app)
+This repo is what I use to power CPST Website, click [HERE](https://cpst.netlify.app) to check it out.
 <br/>
 Writing posts is as simple as creating a page in my beloved [Notion](https://notion.so/) ❤
+
+to learn more about Notion Integration, check it out [HERE](https://developers.notion.com/docs/getting-started).
 
 --------------------------------------------------------------------------------------
 
@@ -16,4 +18,4 @@ Writing posts is as simple as creating a page in my beloved [Notion](https://not
 
 ## License
 
-The Original Repositorie Owner -> MIT © [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
+The Original Repositorie -> MIT © [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
