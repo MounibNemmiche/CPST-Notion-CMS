@@ -52,3 +52,7 @@ NOTE: If you have multiple pages in your workspace with the same slugified name,
 ## Deployment
 
 The website is deployed on [Netlify](https://netlify.app)
+
+## License
+
+The Original Repositorie -> MIT © [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
