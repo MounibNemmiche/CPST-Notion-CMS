@@ -10,8 +10,6 @@ This repo is what I use to power CPST Website, click [HERE](https://cpst.netlify
 <br/>
 Writing posts is as simple as creating a page in my beloved [Notion](https://notion.so/) ❤
 
-to learn more about Notion Integration, check it out [HERE](https://developers.notion.com/docs/getting-started).
-
 --------------------------------------------------------------------------------------
 
 >This GitHub repo is customised by [Me](https://www.github.com/MounibNemmiche)
@@ -21,7 +19,7 @@ to learn more about Notion Integration, check it out [HERE](https://developers.n
 
 ## Features
 
-- Notion Integration: The website uses Notion API to fetch content and display it on the website. Learn more about Notion Integration HERE
+- Notion Integration: The website uses Notion API to fetch content and display it on the website. learn more about Notion Integration, check it out [HERE](https://developers.notion.com/docs/getting-started).
 - Easy Configuration: All config is defined in site.config.ts.
 - Deployment: The website can be deployed to Netlify or Vercel with a single command npm run deploy.
 
