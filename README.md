@@ -11,9 +11,9 @@ https://cpst.netlify.app/
 
    - Fork or clone this repository.
    - Update values in site.config.ts
-   - Install dependencies by running npm install.
-   - Test the website locally by running npm run dev.
-   - Deploy the website to Vercel by running npm run deploy.
+   - Install dependencies by running `npm install`.
+   - Test the website locally by running `npm run dev`.
+   - Deploy the website to Vercel by running `npm run deploy`.
 
 ## Configuration
 
