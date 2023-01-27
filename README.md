@@ -34,4 +34,4 @@ You can override the default slug generation on a per-page basis by adding a Slu
 NOTE: If you have multiple pages in your workspace with the same slugified name, the app will throw an error letting you know that there are duplicate URL pathnames.
 ## Deployment
 
-The website is deployed on (Netlify)[netlify.app]
+The website is deployed on (Netlify) [netlify.app]
