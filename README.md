@@ -19,7 +19,7 @@ Writing posts is as simple as creating a page in my beloved [Notion](https://not
 
 ## Features
 
-- Notion Integration: The website uses Notion API to fetch content and display it on the website. learn more about Notion Integration, check it out [HERE](https://developers.notion.com/docs/getting-started).
+- Notion Integration: The website uses Notion API to fetch content and display it on the website. learn more about Notion Integration [HERE](https://developers.notion.com/docs/getting-started).
 - Easy Configuration: All config is defined in site.config.ts.
 - Deployment: The website can be deployed to Netlify or Vercel with a single command npm run deploy.
 
