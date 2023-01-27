@@ -17,7 +17,7 @@ to learn more about Notion Integration, check it out [HERE](https://developers.n
 >This GitHub repo is customised by [Me](https://www.github.com/MounibNemmiche)
 
 ## Demo
-https://cpst.netlify.app/
+[Live Preview Website](https://cpst.netlify.app/)
 
 ## Features
 
