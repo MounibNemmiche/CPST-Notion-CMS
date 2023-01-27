@@ -1,4 +1,21 @@
-This repository powers the CPST Website, using Notion as a CMS and Next.js to build the site. It is deployed on Netlify. The website allows for simple writing of posts by creating pages in Notion.
+# Notion-CMS-CPST Website
+
+## About 
+
+This repository powers the [CPST Website](https://cpst.netlify.app/) It uses Notion as a CMS, fetching content from Notion using there [API](https://developers.notion.com/) and then uses [Next.js](https://nextjs.org/).
+
+The site is deployed to [Netlify](http://netlify.com).
+
+This repo is what I use to power CPST Website, click [HERE](https://cpst.netlify.app) to check it out.
+<br/>
+Writing posts is as simple as creating a page in my beloved [Notion](https://notion.so/) ❤
+
+to learn more about Notion Integration, check it out [HERE](https://developers.notion.com/docs/getting-started).
+
+--------------------------------------------------------------------------------------
+
+>This GitHub repo is customised by [Me](https://www.github.com/MounibNemmiche)
+
 ## Demo
 https://cpst.netlify.app/
 
