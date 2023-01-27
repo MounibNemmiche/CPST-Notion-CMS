@@ -3,17 +3,17 @@ This repository powers the CPST Website, using Notion as a CMS and Next.js to bu
 https://cpst.netlify.app/
 ##Features
 
-    - Notion Integration: The website uses Notion API to fetch content and display it on the website. Learn more about Notion Integration HERE
-    - Easy Configuration: All config is defined in site.config.ts.
-    - Deployment: The website can be deployed to Vercel with a single command npm run deploy.
+- Notion Integration: The website uses Notion API to fetch content and display it on the website. Learn more about Notion Integration HERE
+- Easy Configuration: All config is defined in site.config.ts.
+- Deployment: The website can be deployed to Vercel with a single command npm run deploy.
 
 ## Setup
 
-    - Fork or clone this repository.
-    - Update values in site.config.ts
-    - Install dependencies by running npm install.
-    - Test the website locally by running npm run dev.
-    - Deploy the website to Vercel by running npm run deploy.
+   - Fork or clone this repository.
+   - Update values in site.config.ts
+   - Install dependencies by running npm install.
+   - Test the website locally by running npm run dev.
+   - Deploy the website to Vercel by running npm run deploy.
 
 ## Configuration
 
