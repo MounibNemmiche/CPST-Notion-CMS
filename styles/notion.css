@@ -7,7 +7,7 @@
  * places to add some flare.
  */
 
-.notion {
+ .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
 }
@@ -41,9 +41,14 @@
 }
 /* Fix embedded video's size overflows its container --> */
 
-.notion-header .nav-header {
+.notion-header .notion-nav-header {
   max-width: 1100px;
   margin: 0 auto;
+  overflow-x: auto;
+}
+
+.notion-nav-header-rhs {
+  gap: 0.5rem;
 }
 
 .notion-gallery-grid {
@@ -73,6 +78,22 @@
 .notion-collection-card {
   border-radius: 16px;
   box-shadow: none;
+ /* Add this after the existing .notion-gallery-grid .notion-page-icon rule*/
+.notion-page-icon-inline,
+.notion-page-icon-span {
+  display: none !important;
+}
+
+/*If you want to target only within cards/gallery*/
+.notion-collection-card .notion-page-icon-inline,
+.notion-collection-card .notion-page-icon-span,
+.notion-gallery-grid .notion-page-icon-inline,
+.notion-gallery-grid .notion-page-icon-span {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
 }
 
 .notion-collection-card-cover img {
@@ -164,6 +185,7 @@
 .notion-title {
   display: block;
   text-align: center;
+  font-weight: bold;
 }
 
 .notion-collection-column-title {
@@ -179,7 +201,7 @@
   padding: 0;
 }
 
-.notion-page-cover {
+/* .notion-page-cover {
   max-width: 1313.28px;
   border-radius: 24px;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
@@ -187,6 +209,26 @@
 
 @media only screen and (max-width: 1313.28px) {
   .notion-page-cover {
+    border-radius: 0;
+  }
+} */
+.notion-page-cover-wrapper,
+.notion-page-cover-wrapper span,
+.notion-page-cover-wrapper img {
+  max-width: 1313.28px !important;
+  border-radius: 24px;
+}
+
+.notion-page-cover-wrapper {
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+}
+
+
+
+@media only screen and (max-width: 1313.28px) {
+  .notion-page-cover-wrapper,
+  .notion-page-cover-wrapper span,
+  .notion-page-cover-wrapper img {
     border-radius: 0;
   }
 }
@@ -201,11 +243,11 @@
   border-radius: 16px;
 }
 
-/* if you don't want rounded page images, remove this */
+/* if you don't want rounded page images, remove this*/
 .notion-page-icon-wrapper img.notion-page-icon {
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
-}
+} 
 
 .notion-header {
   background: hsla(0, 0%, 100%, 0.8);
