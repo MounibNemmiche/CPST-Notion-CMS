@@ -27,6 +27,3 @@ Writing posts is as simple as creating a page in my beloved [Notion](https://not
 
 The website is deployed on [Netlify](https://netlify.app)
 
-## License
-
-The Original Repositorie -> MIT © [Travis Fischer](https://github.com/transitive-bullshit/nextjs-notion-starter-kit)
