@@ -4,9 +4,13 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { type PageBlock } from 'notion-types'
-import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
+import {
+  formatDate,
+  getBlockTitle,
+  getBlockValue,
+  getPageProperty
+} from 'notion-utils'
 import * as React from 'react'
-import BodyClassName from 'react-body-classname'
 import {
   type NotionComponents,
   NotionRenderer,
@@ -111,7 +115,7 @@ function Tweet({ id }: { id: string }) {
 }
 
 const propertyLastEditedTimeValue = (
-  { block, pageHeader },
+  { block, pageHeader }: any,
   defaultFn: () => React.ReactNode
 ) => {
   if (pageHeader && block?.last_edited_time) {
@@ -124,7 +128,7 @@ const propertyLastEditedTimeValue = (
 }
 
 const propertyDateValue = (
-  { data, schema, pageHeader },
+  { data, schema, pageHeader }: any,
   defaultFn: () => React.ReactNode
 ) => {
   if (pageHeader && schema?.name?.toLowerCase() === 'published') {
@@ -141,7 +145,7 @@ const propertyDateValue = (
 }
 
 const propertyTextValue = (
-  { schema, pageHeader },
+  { schema, pageHeader }: any,
   defaultFn: () => React.ReactNode
 ) => {
   if (pageHeader && schema?.name?.toLowerCase() === 'author') {
@@ -183,16 +187,24 @@ export function NotionPage({
 
   const { isDarkMode } = useDarkMode()
 
+  React.useEffect(() => {
+    document.body.classList.toggle('notion-lite', isLiteMode)
+
+    return () => {
+      document.body.classList.remove('notion-lite')
+    }
+  }, [isLiteMode])
+
   const siteMapPageUrl = React.useMemo(() => {
     const params: any = {}
     if (lite) params.lite = lite
 
     const searchParams = new URLSearchParams(params)
-    return mapPageUrl(site, recordMap, searchParams)
+    return site ? mapPageUrl(site, recordMap!, searchParams) : undefined
   }, [site, recordMap, lite])
 
   const keys = Object.keys(recordMap?.block || {})
-  const block = recordMap?.block?.[keys[0]]?.value
+  const block = getBlockValue(recordMap?.block?.[keys[0]!])
 
   // const isRootPage =
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
@@ -204,7 +216,7 @@ export function NotionPage({
 
   const pageAside = React.useMemo(
     () => (
-      <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
+      <PageAside block={block!} recordMap={recordMap!} isBlogPost={isBlogPost} />
     ),
     [block, recordMap, isBlogPost]
   )
@@ -215,7 +227,7 @@ export function NotionPage({
     return <Loading />
   }
 
-  if (error || !site || !block) {
+  if (error || !site || !block || !recordMap) {
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
@@ -237,8 +249,9 @@ export function NotionPage({
     g.block = block
   }
 
-  const canonicalPageUrl =
-    !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
+  const canonicalPageUrl = config.isDev
+    ? undefined
+    : getCanonicalPageUrl(site, recordMap)(pageId)
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
@@ -261,9 +274,6 @@ export function NotionPage({
         image={socialImage}
         url={canonicalPageUrl}
       />
-
-      {isLiteMode && <BodyClassName className='notion-lite' />}
-      {isDarkMode && <BodyClassName className='dark-mode' />}
 
       <NotionRenderer
         bodyClassName={cs(
